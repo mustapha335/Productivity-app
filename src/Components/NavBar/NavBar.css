@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+.navbar__container {
+  background-color: #0a2f4d;
+  /* background-color: #3589a1; */
+  height: 56px;
+  width: 100vw;
+  border-radius: 0px 0px 10px 10px;
+}
+.icons8-menu {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNIDUgOSBMIDUgMTEgTCA0NSAxMSBMIDQ1IDkgTCA1IDkgeiBNIDUgMjQgTCA1IDI2IEwgNDUgMjYgTCA0NSAyNCBMIDUgMjQgeiBNIDUgMzkgTCA1IDQxIEwgNDUgNDEgTCA0NSAzOSBMIDUgMzkgeiI+PC9wYXRoPjwvc3ZnPg==")
+    50% 50% no-repeat;
+  background-size: 100%;
+}
+.navbar__text {
+  display: flex;
+  gap: 20px;
+  margin-left: 68rem;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+
+  /* justify-content: flex-end; */
+}
