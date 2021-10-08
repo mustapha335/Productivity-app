@@ -1,0 +1,30 @@
+.div-1 {
+  background-color: rgb(136, 158, 175);
+  width: 19rem;
+  height: 10px;
+  border-radius: 9px;
+  margin-top: 41.5rem;
+  margin-left: 10.5rem;
+}
+.arrow-down {
+  width: 0px;
+  height: 10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  margin-left: 40%;
+  border-top: 20px solid rgb(80, 109, 132);
+}
+.text_cal {
+  display: flex;
+  color: black;
+  font-size: 20px;
+  justify-content: space-around;
+  margin-right: 8px;
+  margin-top: -6px;
+  font-weight: bold;
+}
+.text2 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 9px;
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+
+.center {
+  width: 22rem;
+  height: 22rem;
+  position: absolute;
+  margin-top: 16rem;
+  margin-left: 20rem;
+  transform: translate(-50%, -50%);
+}
+.circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(120, 122, 145, 0.5);
+  border: 0.5px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  cursor: pointer;
+}
+.wave {
+  background-color: rgb(12, 66, 113, 0.8);
+  position: absolute;
+  top: 110%;
+  height: 200%;
+  width: 200%;
+  border-radius: 38%;
+  left: -50%;
+  transform: rotate(360deg);
+  transition: all 5s ease;
+  animation: wave 30s linear infinite;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+.circle:hover .wave {
+  top: 0%;
+}
+.text {
+  position: absolute;
+  margin-left: 5.5rem;
+  margin-top: 8.8rem;
+  z-index: 10;
+  font-size: 40px;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-left: 0rem;
+}
+.pause_button {
+  width: 70px;
+  height: 23px;
+  background-color: aqua;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+}
+.play_button {
+  width: 70px;
+  height: 23px;
+  background-color: aqua;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+}
+.reset_button {
+  width: 70px;
+  height: 23px;
+  background-color: aqua;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+}

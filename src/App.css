@@ -1,6 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .app__container {
   background-color: #123f64;
-  /* background-color: #296c80; */
   width: 100vw;
   height: 100vh;
+}
+.vertical {
+  border-left: 1px solid black;
+  height: 90vh;
+  position: absolute;
+  left: 50%;
+  margin-top: 10px;
 }
