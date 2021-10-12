@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 .wave {
-  background-color: rgb(12, 66, 113, 0.8);
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
   position: absolute;
   top: 110%;
   height: 200%;
@@ -32,7 +32,7 @@
   left: -50%;
   transform: rotate(360deg);
   transition: all 5s ease;
-  animation: wave 30s linear infinite;
+  animation: wave 65s linear infinite;
 }
 @keyframes wave {
   0% {
@@ -44,6 +44,8 @@
 }
 .circle:hover .wave {
   top: 0%;
+  transition: all 60s ease;
+  /* you can change the secs to make it slower */
 }
 .text {
   position: absolute;
@@ -54,7 +56,7 @@
   font-family: "Orbitron", sans-serif;
   color: white;
 }
-.buttons {
+/* .buttons {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
@@ -67,6 +69,7 @@
   border: none;
   font-size: 20px;
   border-radius: 3px;
+  cursor: pointer;
 }
 .play_button {
   width: 70px;
@@ -75,6 +78,7 @@
   border: none;
   border-radius: 3px;
   font-size: 20px;
+  cursor: pointer;
 }
 .reset_button {
   width: 70px;
@@ -83,4 +87,35 @@
   border: none;
   border-radius: 3px;
   font-size: 20px;
+  cursor: pointer;
+} */
+.button {
+  padding: 0.6rem 1.5rem;
+  margin: 0.4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-style: groove;
+}
+
+.button:focus {
+  outline-width: 0;
+}
+
+.button-primary:hover {
+  background-color: #2641d4;
+  border: 1px solid #1b1f2b;
+}
+
+.button-primary-active {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
+}
+
+.button-primary-inactive {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
 }

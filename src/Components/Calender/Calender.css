@@ -5,6 +5,7 @@
   border-radius: 9px;
   margin-top: 41.5rem;
   margin-left: 10.5rem;
+  cursor: pointer;
 }
 .arrow-down {
   width: 0px;
@@ -13,6 +14,7 @@
   border-right: 20px solid transparent;
   margin-left: 40%;
   border-top: 20px solid rgb(80, 109, 132);
+  cursor: pointer;
 }
 .text_cal {
   display: flex;
@@ -22,9 +24,11 @@
   margin-right: 8px;
   margin-top: -6px;
   font-weight: bold;
+  cursor: pointer;
 }
 .text2 {
   font-size: 25px;
   color: white;
   margin-bottom: 9px;
+  cursor: pointer;
 }

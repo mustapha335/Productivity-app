@@ -5,6 +5,7 @@
   transform: scale(2);
   margin-left: 73rem;
   margin-top: 10rem;
+  cursor: pointer;
 }
 .circular .inner {
   position: absolute;

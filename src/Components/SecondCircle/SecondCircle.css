@@ -5,6 +5,7 @@
   transform: scale(2);
   margin-left: 97rem;
   margin-top: -6.5rem;
+  cursor: pointer;
 }
 .circula .inner {
   position: absolute;
@@ -41,7 +42,7 @@
   width: 100%;
   -webkit-border-radius: 100%;
   clip: rect(0px, 50px, 100px, 0px);
-  background: #4158d0;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 .circle .left .progress {
   z-index: 1;

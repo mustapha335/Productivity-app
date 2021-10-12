@@ -1,27 +1,74 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Timer.css";
 
-const timer = () => {
+const Timer = () => {
+  const [timer, setTimer] = useState(25);
+  const [isActive, setIsActive] = useState(false);
+
+  function toggle() {
+    setIsActive(!isActive);
+  }
+
+  function reset() {
+    setTimer(25);
+    setIsActive(false);
+  }
+  useEffect(() => {
+    let interval = null;
+    if (isActive) {
+      interval = setInterval(() => {
+        setTimer((timer) => timer - 1);
+      }, 60);
+    } else if (!isActive && timer !== 0) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [isActive, timer]);
+  // const handleClick = () => {
+  //   setTimeout(() => setTimer(timer - 1), 60000);
+  // };
+  // let interval = useRef();
+  // const handleTimer = () => {
+  //   interval = setInterval(() => {
+  //     const countdown = timer - 1;
+  //     if (countdown < 0) {
+  //       //stp timer
+  //       clearInterval();
+  //     } else {
+  //       setTimer(countdown);
+  //     }
+  //   }, 1000);
+  // };
+  // const handleClick = () => {
+  //   if (timer < 0) {
+  //     setTimer("5");
+  //   } else {
+  //     setTimer(() => setTimer(timer - 1), 1000);
+  //   }
+  // };
+
   return (
     <div class="center">
       <div class="circle">
-        <div class="text">20mins</div>
+        <div class="text">{timer}mins </div>
         <div class="wave"></div>
       </div>
 
-      <div className="buttons">
-        <button type="submit" className="pause_button">
-          Pause
+      <div className="row ">
+        <button
+          className={`button button-primary button-primary-${
+            isActive ? "active" : "inactive"
+          }`}
+          onClick={toggle}
+        >
+          {isActive ? "Pause" : "Start"}
         </button>
-        <button type="submit" className="play_button">
-          Start
-        </button>
-        <button type="submit" className="reset_button">
-          reset
+        <button className="button" onClick={reset}>
+          Reset
         </button>
       </div>
     </div>
   );
 };
 
-export default timer;
+export default Timer;
