@@ -4,7 +4,7 @@ import "./Timer.css";
 const Timer = () => {
   const [timer, setTimer] = useState(25);
   const [isActive, setIsActive] = useState(false);
-
+  const activeTimer = timer;
   function toggle() {
     setIsActive(!isActive);
   }
@@ -18,9 +18,10 @@ const Timer = () => {
     if (isActive) {
       interval = setInterval(() => {
         setTimer((timer) => timer - 1);
-      }, 60);
-    } else if (!isActive && timer !== 0) {
+      }, 600);
+    } else if (!isActive && timer === 0) {
       clearInterval(interval);
+      setTimer(0);
     }
     return () => clearInterval(interval);
   }, [isActive, timer]);
@@ -48,22 +49,22 @@ const Timer = () => {
   // };
 
   return (
-    <div class="center">
-      <div class="circle">
-        <div class="text">{timer}mins </div>
-        <div class="wave"></div>
+    <div className="center">
+      <div className="circle">
+        <div className="text">{activeTimer === 0 ? "0" : timer}mins </div>
+        <div className="wave"></div>
       </div>
 
       <div className="row ">
         <button
-          className={`button button-primary button-primary-${
+          className={`button1 button-primary button-primary-${
             isActive ? "active" : "inactive"
           }`}
           onClick={toggle}
         >
           {isActive ? "Pause" : "Start"}
         </button>
-        <button className="button" onClick={reset}>
+        <button className="button button2" onClick={reset}>
           Reset
         </button>
       </div>

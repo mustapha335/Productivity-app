@@ -4,15 +4,15 @@ import "./ProgressCircle.css";
 const progressCircle = () => {
   return (
     <div>
-      <div class="circular">
-        <div class="inner"></div>
-        <div class="number">100%</div>
-        <div class="circle">
-          <div class="bar left">
-            <div class="progress"></div>
+      <div className="circular">
+        <div className="inner"></div>
+        <div className="number">100%</div>
+        <div className="circle">
+          <div className="bar left">
+            <div className="progress"></div>
           </div>
-          <div class="bar right">
-            <div class="progress"></div>
+          <div className="bar right">
+            <div className="progress"></div>
           </div>
         </div>
       </div>

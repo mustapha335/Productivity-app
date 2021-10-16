@@ -89,18 +89,36 @@
   font-size: 20px;
   cursor: pointer;
 } */
-.button {
-  padding: 0.6rem 1.5rem;
-  margin: 0.4rem;
+.button1 {
+  padding: 0.7rem 5rem;
+  margin: 0.7rem;
+  /* margin-left: 19px; */
   border-radius: 3px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-style: groove;
+  cursor: pointer;
 }
 
-.button:focus {
+.button1:focus {
   outline-width: 0;
+}
+.button2 {
+  padding: 0.7rem 5rem;
+  margin: 0.7rem;
+  /* margin-left: 19px; */
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  border-style: groove;
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: rgba(189, 187, 187, 0.698);
+  border: 1px solid #1b1f2b;
+  color: white;
 }
 
 .button-primary:hover {
@@ -118,4 +136,8 @@
   background-color: #3151ff;
   border: 1px solid #152684;
   color: white;
+}
+.row {
+  display: flex;
+  margin-left: 3.5rem;
 }

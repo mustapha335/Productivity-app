@@ -5,8 +5,8 @@ const calender = () => {
   return (
     <div>
       <div className="container">
-        <div class="div-1">
-          {" "}
+        <div className="div-1">
+          {/* {" "}
           <div class="arrow-down"></div>{" "}
           <div className="text_cal">
             <span className="text1">JAN</span>
@@ -21,7 +21,7 @@ const calender = () => {
           <span className="text1">OCT</span>
           <span className="text1">NOV</span>
           <span className="text1">DEC</span> */}
-          </div>
+          */
         </div>
       </div>
     </div>
